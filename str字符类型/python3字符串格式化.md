@@ -19,5 +19,15 @@
 # 字符串格式化方法
 
 1. 使用 str + 变量名的方法
+
 2. 格式化符号方法：str”%s%d”%(str, int)
+
 3. 格式函数法：str”ing {1}”.format()
+
+   print("网站名：{name}, 地址 {url}".format(name="菜鸟教程", url="www.runoob.com"))
+   ## 通过字典设置参数
+   site = {"name": "菜鸟教程", "url": "www.runoob.com"}
+   print("网站名：{name}, 地址 {url}".format(**site))
+   ## 通过列表索引设置参数
+   my_list = ['菜鸟教程', 'www.runoob.com']
+   print("网站名：{0[0]}, 地址 {0[1]}".format(my_list))  # "0" 是必须的
